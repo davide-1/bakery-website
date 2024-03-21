@@ -2,7 +2,7 @@ import React from "react";
 
 export default function ContactUs() {
     return (
-            <div>
+            <div className="bg-beige">
                 <h1 className="flex justify-center text-7xl font-bold text-gold mb-10 md:mb-10">Contact </h1>
                 <hr className="mb-10 border-t-1 border-amber-800 w-52 mx-auto" />
                 <div className="flex flex-col p-4 justify-center max-w-screen-lg mx-auto h-full">
@@ -26,7 +26,7 @@ export default function ContactUs() {
                                 rows="10"
                                 className="p-2 bg-transparent border-2 rounded-md text-amber-800 focus:outline-none"
                             ></textarea>
-                            <button className="text-amber-800 font-semibold bg-gradient-to-b from-gold  px-6 py-3 my-8 mx-auto flex items-center rounded-md hover:scale-110 duration-300">Send</button>
+                            <button className="text-amber-800 font-semibold bg-gold px-6 py-3 my-8 mx-auto flex items-center rounded-md hover:scale-110 duration-300">Send</button>
                         </form>
                         <div className="p-4">
                             <div>

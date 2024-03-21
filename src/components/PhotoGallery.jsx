@@ -1,46 +1,6 @@
-// import React from "react";
-// import almond from "../assets/IMG/bakeryPhoto/almond.jpg"
-// import almondApricot from "../assets/IMG/bakeryPhoto/almondApricot.jpg"
-// import almondFoglia from "../assets/IMG/bakeryPhoto/almondFoglia"
-// import almondFoglia from "../assets/IMG/bakeryPhoto/almondFoglia"
-// import almondFoglia from "../assets/IMG/bakeryPhoto/almondFoglia"
-// import almondFoglia from "../assets/IMG/bakeryPhoto/almondFoglia"
-// import almondFoglia from "../assets/IMG/bakeryPhoto/almondFoglia"
-// import almondFoglia from "../assets/IMG/bakeryPhoto/almondFoglia"
-// import almondFoglia from "../assets/IMG/bakeryPhoto/almondFoglia"
-// import almondFoglia from "../assets/IMG/bakeryPhoto/almondFoglia"
-// import almondFoglia from "../assets/IMG/bakeryPhoto/almondFoglia"
-// import almondFoglia from "../assets/IMG/bakeryPhoto/almondFoglia"
-// import almondFoglia from "../assets/IMG/bakeryPhoto/almondFoglia"
-// import almondFoglia from "../assets/IMG/bakeryPhoto/almondFoglia"
-// import almondFoglia from "../assets/IMG/bakeryPhoto/almondFoglia"
-// import almondFoglia from "../assets/IMG/bakeryPhoto/almondFoglia"
-// import almondFoglia from "../assets/IMG/bakeryPhoto/almondFoglia"
-// import almondFoglia from "../assets/IMG/bakeryPhoto/almondFoglia"
-// import almondFoglia from "../assets/IMG/bakeryPhoto/almondFoglia"
-// import almondFoglia from "../assets/IMG/bakeryPhoto/almondFoglia"
-// import almondFoglia from "../assets/IMG/bakeryPhoto/almondFoglia"
-// import almondFoglia from "../assets/IMG/bakeryPhoto/almondFoglia"
-// import almondFoglia from "../assets/IMG/bakeryPhoto/almondFoglia"
-// import almondFoglia from "../assets/IMG/bakeryPhoto/almondFoglia"
-// import almondFoglia from "../assets/IMG/bakeryPhoto/almondFoglia"
-// import almondFoglia from "../assets/IMG/bakeryPhoto/almondFoglia"
-// import almondFoglia from "../assets/IMG/bakeryPhoto/almondFoglia"
-// import almondFoglia from "../assets/IMG/bakeryPhoto/almondFoglia"
-// import almondFoglia from "../assets/IMG/bakeryPhoto/almondFoglia"
-// import almondFoglia from "../assets/IMG/bakeryPhoto/almondFoglia"
-// import almondFoglia from "../assets/IMG/bakeryPhoto/almondFoglia"
-// import almondFoglia from "../assets/IMG/bakeryPhoto/almondFoglia"
-// import almondFoglia from "../assets/IMG/bakeryPhoto/almondFoglia"
-// import almondFoglia from "../assets/IMG/bakeryPhoto/almondFoglia"
-// import almondFoglia from "../assets/IMG/bakeryPhoto/almondFoglia"
-// import almondFoglia from "../assets/IMG/bakeryPhoto/almondFoglia"
-// import almondFoglia from "../assets/IMG/bakeryPhoto/almondFoglia"
-// import almondFoglia from "../assets/IMG/bakeryPhoto/almondFoglia"
-// import almondFoglia from "../assets/IMG/bakeryPhoto/almondFoglia"
-// import almondFoglia from "../assets/IMG/bakeryPhoto/almondFoglia"
-// import almondFoglia from "../assets/IMG/bakeryPhoto/almondFoglia"
-// import almondFoglia from "../assets/IMG/bakeryPhoto/almondFoglia"
+import React from "react";
+import AlmondCookies from "./AlmondCookies";
+import PuffPastry from "./PuffPastry";
 
 
 
@@ -51,7 +11,8 @@ export default function PhotoGallery() {
 
     return (
         <div>
-            
+            <AlmondCookies />
+            <PuffPastry />
         </div>
     )
 }

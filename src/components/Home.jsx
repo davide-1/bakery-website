@@ -8,7 +8,7 @@ import croissants from "../assets/IMG/croissants.png"
 
 export default function Home() {
     return (
-        <div>
+        <div className="bg-beige">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center justify-center md:justify-start max-w-6xl mx-auto px-4 p-5">
                 <div className="mb-8">
                     <img src={dessert} alt="" className="object-cover max-w-96 h-auto mx-auto md:mx-0" />

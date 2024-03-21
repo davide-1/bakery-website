@@ -2,12 +2,9 @@ import React from "react";
 
 
 export default function AboutUs() {
-//     <div className="flex justify-center">
-//     <div className="top-bar bg-amber-800 h-1 w-10 mb-10"></div>
-// </div>
 
     return (
-        <div className=" relative mx-auto lg:px-80 px-10 text-center mb-20">
+        <div className=" relative mx-auto lg:px-80 px-10 text-center pb-20 bg-beige">
             <div>
                 <h1 className="text-5xl font-semibold text-gold mb-5">Our Bakery</h1>
                 <p className=" text-lg font-semibold text-amber-800">A Sicilian Dream in Santa Cruz</p>

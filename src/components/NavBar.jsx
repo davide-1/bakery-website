@@ -8,8 +8,8 @@ export default function NavBar() {
     const [nav, setNav] = useState(false);
 
     return (
-        <>
-            <div className="flex justify-center mt-5">
+        <div className="bg-beige">
+            <div className="flex justify-center">
                 <img src={logo2} alt="" className=" h-auto" />
             </div>
         <nav className=" flex flex-col items-center justify-center h-20 text-2xl ">
@@ -78,6 +78,6 @@ export default function NavBar() {
             )}
         </nav>
         
-        </>
+        </div>
     )
 }
