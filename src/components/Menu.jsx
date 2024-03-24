@@ -6,7 +6,7 @@ import menu2 from "../assets/IMG/menu2.png"
 
 export default function Menu() { 
     return (
-        <div className="bg-beige">
+        <div className="bg-beige pt-10">
             <div className="flex flex-col items-center">
                 <h1 className="text-5xl text-gold font-bold mb-10">Pizza Menu</h1>
                 <hr className="mb-10 border-t-1 border-amber-800 w-52 mx-auto" />

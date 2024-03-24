@@ -73,19 +73,19 @@ export default function AlmondCookies() {
 
 
     return (
-        <div className="bg-beige">
+        <div className="bg-beige pt-10">
             <div className="flex flex-col items-center">
                 <h1 className=" text-5xl font-bold text-gold">Almond Cookies</h1>
                 <p className="text-xl py-6 font-semibold text-amber-800">Gluten Free</p>
                 <hr className="mb-10 border-t-1 border-amber-800 w-52 mx-auto" />
             </div>
-            <div className="container mx-auto px-20 pb-10">
-             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 py-8 px-12">
+            <div className="container mx-auto md:px-20 pb-10">
+             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 py-8 md:px-12">
 
                 {
                     cookieImg.map(({id,src,title}) => (
                         <div key={id} className="flex flex-col items-center">
-                            <img src={src} alt="" className=" w-60"/>
+                            <img src={src} alt="" className=" w-60 md:w-auto min-w-36 h-auto mx-auto rounded-xl"/>
                             <p className="text-gold text-xl font-semibold">{title}</p>
                         </div>
                     ))

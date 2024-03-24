@@ -1,10 +1,15 @@
 import React from "react";
+import familyPhoto from "../assets/IMG/familyPhoto.jpg"
 
 
 export default function AboutUs() {
 
     return (
-        <div className=" relative mx-auto lg:px-80 px-10 text-center pb-20 bg-beige">
+        <div className="bg-beige">
+            <div className="flex justify-center ">
+                <img src={familyPhoto} alt="" className=" h-auto w-full pb-20" />
+            </div>
+        <div className="  mx-auto lg:px-80 px-10 text-center pb-20">
             <div>
                 <h1 className="text-5xl font-semibold text-gold mb-5">Our Bakery</h1>
                 <p className=" text-lg font-semibold text-amber-800">A Sicilian Dream in Santa Cruz</p>
@@ -28,5 +33,7 @@ export default function AboutUs() {
                 </p>
             </div>
         </div>
+        </div>
+            
     )
 }

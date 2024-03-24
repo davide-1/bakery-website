@@ -2,7 +2,7 @@ import React from "react";
 
 export default function ContactUs() {
     return (
-            <div className="bg-beige">
+            <div className="bg-beige pt-10">
                 <h1 className="flex justify-center text-7xl font-bold text-gold mb-10 md:mb-10">Contact </h1>
                 <hr className="mb-10 border-t-1 border-amber-800 w-52 mx-auto" />
                 <div className="flex flex-col p-4 justify-center max-w-screen-lg mx-auto h-full">
