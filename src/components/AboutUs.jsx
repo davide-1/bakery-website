@@ -1,13 +1,39 @@
-import React from "react";
+import React, { useRef, useEffect, useState } from "react";
 import familyPhoto from "../assets/IMG/familyPhoto.jpg"
 
 
 export default function AboutUs() {
+    const sectionRef = useRef(null);
+    const [isVisible, setIsVisible] = useState(false);
+
+    useEffect(() => {
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    setIsVisible(true);
+                }
+            });
+        });
+
+        observer.observe(sectionRef.current);
+
+        return () => {
+            if (sectionRef.current) {
+                observer.unobserve(sectionRef.current);
+            }
+        };
+    }, []);
 
     return (
         <div className="bg-beige">
+            <div 
+        ref={sectionRef}
+        className={`pb-20 ${
+            isVisible ? "opacity-100 transition-opacity duration-[2000ms]" : "opacity-0"
+          }`} 
+          >
             <div className="flex justify-center ">
-                <img src={familyPhoto} alt="" className=" h-auto w-full pb-20" />
+                <img src={familyPhoto} alt="" className=" pb-20 pt-10" />
             </div>
         <div className="  mx-auto lg:px-80 px-10 text-center pb-20">
             <div>
@@ -33,6 +59,8 @@ export default function AboutUs() {
                 </p>
             </div>
         </div>
+
+            </div>
         </div>
             
     )

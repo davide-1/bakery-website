@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef, useEffect, useState } from "react";
 import strawberryTasca from "../assets/IMG/bakeryPhoto/strawberryTasca.png"
 import blackBerryTasca from "../assets/IMG/bakeryPhoto/blackBerryTasca.png"
 import chocoGirella from "../assets/IMG/bakeryPhoto/chocoGirella.png"
@@ -61,8 +61,26 @@ export default function PuffPastry() {
     ]
 
 
+    const [isVisible, setIsVisible] = useState(false);
+
+    useEffect(() => {
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    setIsVisible(true);
+                }
+            });
+        });
+
+        observer.observe(document.getElementById("puffPastryImg"));
+
+        return () => observer.disconnect();
+    }, []);
+
+
     return (
         <div className="bg-beige">
+        <div id="puffPastryImg" className={` pt-10 opacity-0 ${isVisible ? 'transition-opacity duration-[2000ms] opacity-100' : ''}`}>
             <div className="flex flex-col items-center">
                 <h1 className=" text-5xl font-bold text-gold pb-6">Puff Pastry</h1>
                 <hr className="mb-10 border-t-1 border-amber-800 w-52 mx-auto" />
@@ -73,14 +91,16 @@ export default function PuffPastry() {
                 {
                     puffPastryImg.map(({id,src,title}) => (
                         <div key={id} className="flex flex-col items-center">
-                            <img src={src} alt="" className="w-60 md:w-auto min-w-36 h-auto mx-auto"/>
-                            <p className="text-gold text-xl font-semibold">{title}</p>
+                            <img src={src} alt="" className="w-60 md:w-auto min-w-36 h-auto mx-auto rounded-xl"/>
+                            <p className="text-gold text-xl font-semibold mt-2">{title}</p>
                         </div>
                     ))
                 }
 
              </div>
             </div>
+        </div>
+
         </div>
     )
 }

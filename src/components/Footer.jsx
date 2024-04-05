@@ -20,7 +20,7 @@ export default function Footer() {
                     <h1 className="text-3xl font-semibold mb-8 text-gold">
                         Address
                     </h1>
-                    <p className="text-amber-800 font-semibold">9280 CA-9 Ben Lomond, CA 95005 <br />Telephone: 831-609-6552 <br />During power outage: 831-713-6548</p>
+                    <p className="text-amber-800 font-semibold">9280 Highway-9 Ben Lomond, CA 95005 <br />Telephone: 831-609-6552 <br />During power outage: 831-713-6548</p>
                 </div>
                 <div className="sm:border-r-2 border-gold sm:pr-4">
                     <h1 className="text-3xl font-semibold mb-8 text-gold">
