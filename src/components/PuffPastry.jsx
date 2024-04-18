@@ -1,4 +1,4 @@
-import React, { useRef, useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import strawberryTasca from "../assets/IMG/bakeryPhoto/strawberryTasca.png"
 import blackBerryTasca from "../assets/IMG/bakeryPhoto/blackBerryTasca.png"
 import chocoGirella from "../assets/IMG/bakeryPhoto/chocoGirella.png"
