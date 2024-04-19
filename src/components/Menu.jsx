@@ -28,6 +28,9 @@ export default function Menu() {
                 <hr className="mb-10 border-t-1 border-amber-800 w-52 mx-auto" />
             </div>
             <div className="flex flex-col justify-center md:flex-row md:justify-center">
+                <div>
+                    
+                </div>
                 <img src={menu} alt=""
                     className="w-96 border-4 border-gold mb-5 md:mr-5 md:mb-0" />
 

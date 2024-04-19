@@ -26,7 +26,7 @@ export default function Footer() {
                     <h1 className="text-3xl font-semibold mb-8 text-gold">
                         Social Media
                     </h1>
-                    <p className="text-amber-800 font-semibold">Visit our FACEBOOK and YELP pages for reviews and additional information.</p>
+                    <p className="text-amber-800 font-semibold">Visit our FACEBOOK and YELP pages for reviews and additional information. And order online with Uber Eats</p>
                     <SocialLinks />
                 </div>
                 <div>
