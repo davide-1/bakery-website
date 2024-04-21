@@ -51,7 +51,7 @@ export default function AboutUs() {
                 </p>
                 <br />
                 <p className="font-semibold text-amber-800">
-                    One sunny afternoon in 2017, Leonardo stumbled upon Ben Lomond Bakery nestled in the mountains of Santa Cruz. Instantly captivated by its charm, he envisioned transforming the bakery into a haven where the essence of Sicilian culinary heritage would come alive.
+                    One sunny afternoon in 2017, Leonardo stumbled upon Ben Lomond Bakery nestled in the mountains of Santa Cruz. Instantly captivated by its charm, he envisioned transforming the bakery into a heaven where the essence of Sicilian culinary heritage would come alive.
                 </p>
                 <br />
                 <p className="font-semibold text-amber-800">
