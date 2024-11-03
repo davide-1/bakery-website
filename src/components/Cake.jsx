@@ -14,7 +14,7 @@ import lemonBar from "../assets/IMG/bakeryPhoto/lemonBar.jpg"
 
 
 
-export default function PuffPastry() {
+export default function Cake() {
 
     const cakeImg = [
         {

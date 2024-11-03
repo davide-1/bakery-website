@@ -8,7 +8,7 @@ import sanDaniele from "../assets/IMG/bakeryPhoto/sanDaniele.jpg"
 import vegetarian from "../assets/IMG/bakeryPhoto/vegetarian.jpg"
 
 
-export default function PuffPastry() {
+export default function Pizza() {
 
     const pizzaImg = [
         {
