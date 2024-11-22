@@ -1,4 +1,4 @@
-import React, { useRef, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import hazelnutPassion from "../assets/IMG/bakeryPhoto/hazelnutPassion.png"
 import mixedBerry from "../assets/IMG/bakeryPhoto/mixedBerry.jpg"
 import monterosa from "../assets/IMG/bakeryPhoto/monterosa.jpg"

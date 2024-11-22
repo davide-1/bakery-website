@@ -1,4 +1,4 @@
-import React from "react";
+
 import { FaFacebookSquare } from "react-icons/fa";
 import { BsYelp } from "react-icons/bs";
 import { SiUbereats } from "react-icons/si";

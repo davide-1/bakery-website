@@ -1,4 +1,4 @@
-import React from "react";
+
 import BusinessHours from "./BusinessHours";
 import SocialLinks from "./SocialLinks";
 export default function Footer() {

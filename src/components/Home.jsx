@@ -1,11 +1,12 @@
 
-import React, { useRef, useEffect, useState } from "react";
+import { useRef, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import cannoli from "../assets/IMG/bakeryPhoto/cannoli.png";
 import almondCookie from "../assets/IMG/almondCookie.png";
 import tiramisu from "../assets/IMG/tiramisu.png";
 import laPlacaHero from "../assets/IMG/laPlacaHero.jpg";
 import puffPastries from "../assets/IMG/puffPastries.png";
+import PropTypes from "prop-types";
 
 
 const Section = ({ image, title, description, reverse, link }) => {
@@ -54,6 +55,19 @@ const Section = ({ image, title, description, reverse, link }) => {
   );
 };
 
+Section.propTypes = {
+  image: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
+  reverse: PropTypes.bool,
+  link: PropTypes.string,
+};
+
+Section.defaultProps = {
+  reverse: false,
+  link: null,
+};
+
 export default function Home() {
   return (
     <div className="bg-beige">
@@ -73,20 +87,20 @@ export default function Home() {
         image={puffPastries}
         title="Puff Pastry"
         description="Embark on a culinary journey with our heavenly puff pastries, each bite a symphony of flaky layers and buttery goodness. Delight in the delicate crunch as you sink your teeth into these golden parcels of perfection. Whether you're craving a savory sensation or a sweet delight, our puff pastries cater to every palate."
-        link="puffPastry"
+        link="/puffPastry"
       />
       <Section
         image={tiramisu}
         title="Dolci"
         description="From the iconic cannoli bursting with creamy ricotta to the flaky layers of sfogliatelle filled with citrus-scented delights, each pastry is a tribute to Italy's rich culinary heritage. Indulge in the velvety smoothness of tiramisu, or savor the simplicity of a perfectly baked biscotti dipped in rich espresso. With every bite, experience the passion and tradition woven into each pastry, inviting you to savor the sweet symphony of flavors that only authentic Italian pastries can offer. Buon appetito!"
         reverse={true}
-        link="cake"
+        link="/cake"
       />
       <Section
         image={laPlacaHero}
         title="Pizza"
         description="Indulge your guilty pleasure with our thin-crust pizzas, where every slice is a testament to craftsmanship and flavor. Our thin, crispy crust serves as the perfect canvas for a melody of flavors, marrying the freshness of premium ingredients with the artistry of traditional pizza-making."
-        link="pizza"
+        link="/pizza"
       />
     </div>
   );

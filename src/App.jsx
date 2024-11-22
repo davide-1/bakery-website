@@ -10,6 +10,7 @@ import AlmondCookies from "./components/AlmondCookies"
 import PuffPastry from "./components/PuffPastry"
 import Cake from "./components/Cake"
 import Pizza from "./components/Pizza"
+import QuickFoodNav from "./components/QuickFoodNav"
 
 function App() {
   
@@ -53,6 +54,10 @@ function App() {
           <Route 
             path="/pizza"
             element={<Pizza />}
+          />
+          <Route 
+            path="/quickFoodNav"
+            element={<QuickFoodNav />}
           />
         </Routes> 
         <Footer />

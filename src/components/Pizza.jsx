@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import cheesePizza from "../assets/IMG/bakeryPhoto/cheesePizza.jpg"
 import facciaDiVecchia from "../assets/IMG/bakeryPhoto/facciaDiVecchia.jpg"
 import fourCheese from "../assets/IMG/bakeryPhoto/fourCheese.jpg"
@@ -79,7 +79,13 @@ export default function Pizza() {
                 {
                     pizzaImg.map(({id,src,title}) => (
                         <div key={id} className="flex flex-col items-center">
-                            <img src={src} alt="" className="w-60 md:w-auto min-w-36 h-auto mx-auto rounded-xl"/>
+                            <img 
+                            src={src} 
+                            alt={title} 
+                            loading="lazy"
+                            className="w-60 md:w-auto min-w-36 h-auto mx-auto rounded-xl"
+                            onLoad={(e) => e.currentTarget.classList.add("opacity-100")}
+                            />
                             <p className="text-gold text-xl font-semibold mt-2">{title}</p>
                         </div>
                     ))

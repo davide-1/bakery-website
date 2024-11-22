@@ -1,4 +1,4 @@
-import React, { useRef, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import almondPecan from "../assets/IMG/bakeryPhoto/almondPecan.jpg"
 import almondApricot from "../assets/IMG/bakeryPhoto/almondApricot.jpg"
 import almondFoglia from "../assets/IMG/bakeryPhoto/almondFoglia.jpg"
