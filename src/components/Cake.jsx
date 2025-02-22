@@ -88,7 +88,7 @@ export default function Cake() {
 
 
     return (
-        <div className="bg-beige">
+        <div name="Cake" className="bg-beige">
         <div id="cakeImg" className={` pt-10 pb-20 opacity-0 ${isVisible ? 'transition-opacity duration-[2000ms] opacity-100' : ''}`}>
             <div className="flex flex-col items-center">
                 <h1 className=" text-5xl font-bold text-gold pb-6">Cake</h1>

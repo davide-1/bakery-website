@@ -79,7 +79,7 @@ export default function PuffPastry() {
 
 
     return (
-        <div className="bg-beige">
+        <div name="Pastry" className="bg-beige">
         <div id="puffPastryImg" className={` pt-10 opacity-0 ${isVisible ? 'transition-opacity duration-[2000ms] opacity-100' : ''}`}>
             <div className="flex flex-col items-center">
                 <h1 className=" text-5xl font-bold text-gold pb-6">Puff Pastry</h1>

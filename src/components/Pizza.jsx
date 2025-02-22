@@ -67,7 +67,7 @@ export default function Pizza() {
 
 
     return (
-        <div className="bg-beige">
+        <div name="Pizza" className="bg-beige">
         <div id="pizzaImg" className={` pt-10 opacity-0 ${isVisible ? 'transition-opacity duration-[2000ms] opacity-100' : ''}`}>
             <div className="flex flex-col items-center">
                 <h1 className=" text-5xl font-bold text-gold pb-6">Pizza</h1>

@@ -93,7 +93,7 @@ export default function AlmondCookies() {
     }, []);
 
     return (
-        <div className="bg-beige">
+        <div name="Cookies" className="bg-beige">
         <div id="almondCookies" className={` opacity-0 ${isVisible ? 'transition-opacity duration-[2000ms] opacity-100' : ''}`}>
             <div className="flex flex-col items-center">
                 <h1 className="text-5xl font-bold text-gold">Almond Cookies</h1>
