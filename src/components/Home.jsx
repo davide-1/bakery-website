@@ -14,22 +14,26 @@ const Section = ({ image, title, description, reverse, link }) => {
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
+    const currentSection = sectionRef.current; // capture the current value
     const observer = new IntersectionObserver((entries) => {
-        entries.forEach((entry) => {
-            if (entry.isIntersecting) {
-                setIsVisible(true);
-            }
-        });
-    });
-
-    observer.observe(sectionRef.current);
-
-    return () => {
-        if (sectionRef.current) {
-            observer.unobserve(sectionRef.current);
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          setIsVisible(true);
         }
+      });
+    });
+    
+    if (currentSection) {
+      observer.observe(currentSection);
+    }
+    
+    return () => {
+      if (currentSection) {
+        observer.unobserve(currentSection);
+      }
     };
-}, []);
+  }, []);
+  
 
   return (
     <div
